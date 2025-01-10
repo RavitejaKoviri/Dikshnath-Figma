@@ -1,11 +1,8 @@
-
 "use client";
 
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-
-
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,21 +12,21 @@ const Carousel = () => {
   const items = [
     {
       id: 1,
-      src:"https://www.grafterr.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FgoProducts.2cf79b68.webp&w=3840&q=75",
+      src: "https://www.grafterr.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FgoProducts.2cf79b68.webp&w=3840&q=75",
       alt: "Nature landscape",
       title: "Mountain Escape",
       path: "https://www.fininfocom.com/",
     },
     {
       id: 2,
-      src:"https://www.grafterr.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FhospitalityProducts.9393e64c.webp&w=1920&q=75",
+      src: "https://www.grafterr.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FhospitalityProducts.9393e64c.webp&w=1920&q=75",
       alt: "City skyline",
       title: "Urban Adventure",
       path: "https://www.fininfocom.com/",
     },
     {
       id: 3,
-      src:"https://www.grafterr.com/homePageImages/homeNewImages/pointOfSale.webp",
+      src: "https://www.grafterr.com/homePageImages/homeNewImages/pointOfSale.webp",
       alt: "Mountain view",
       title: "Forest Journey",
       path: "https://www.fininfocom.com/",
@@ -43,14 +40,14 @@ const Carousel = () => {
     },
     {
       id: 5,
-      src:"https://www.grafterr.com/homePageImages/homeNewImages/OnlineDevice.webp",
+      src: "https://www.grafterr.com/homePageImages/homeNewImages/OnlineDevice.webp",
       alt: "City skyline",
       title: "Urban Adventure",
       path: "https://www.fininfocom.com/",
     },
     {
       id: 6,
-      src:"https://www.grafterr.com/homePageImages/homeNewImages/collectionDevice.webp",
+      src: "https://www.grafterr.com/homePageImages/homeNewImages/collectionDevice.webp",
       alt: "City skyline",
       title: "Urban Adventure",
       path: "https://www.fininfocom.com/",
@@ -81,16 +78,18 @@ const Carousel = () => {
   };
 
   useEffect(() => {
-    // Set initial item groups after component mounts
-    setItemGroups(getItemGroups());
-
-    const handleResize = () => {
+    if (typeof window !== "undefined") {
+      // Set initial item groups after component mounts
       setItemGroups(getItemGroups());
-      setCurrentIndex(0); // Reset to the first slide on resize
-    };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+      const handleResize = () => {
+        setItemGroups(getItemGroups());
+        setCurrentIndex(0); // Reset to the first slide on resize
+      };
+
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
   }, []);
 
   useEffect(() => {
@@ -240,9 +239,6 @@ const Carousel = () => {
 };
 
 export default Carousel;
-
-
-
 
 
 
