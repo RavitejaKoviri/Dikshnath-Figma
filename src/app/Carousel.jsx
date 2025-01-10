@@ -15,21 +15,21 @@ const Carousel = () => {
   const items = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGVzaWdufGVufDB8fDB8fHww",
+      src:"https://www.grafterr.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FgoProducts.2cf79b68.webp&w=3840&q=75",
       alt: "Nature landscape",
       title: "Mountain Escape",
       path: "https://www.fininfocom.com/",
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGVzaWdufGVufDB8fDB8fHww",
+      src:"https://www.grafterr.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FhospitalityProducts.9393e64c.webp&w=1920&q=75",
       alt: "City skyline",
       title: "Urban Adventure",
       path: "https://www.fininfocom.com/",
     },
     {
       id: 3,
-      src: "https://plus.unsplash.com/premium_photo-1683147638125-fd31a506a429?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2ViJTIwZGVzaWdufGVufDB8fDB8fHww",
+      src:"https://www.grafterr.com/homePageImages/homeNewImages/pointOfSale.webp",
       alt: "Mountain view",
       title: "Forest Journey",
       path: "https://www.fininfocom.com/",
@@ -43,14 +43,14 @@ const Carousel = () => {
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGVzaWdufGVufDB8fDB8fHww",
+      src:"https://www.grafterr.com/homePageImages/homeNewImages/OnlineDevice.webp",
       alt: "City skyline",
       title: "Urban Adventure",
       path: "https://www.fininfocom.com/",
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGVzaWdufGVufDB8fDB8fHww",
+      src:"https://www.grafterr.com/homePageImages/homeNewImages/collectionDevice.webp",
       alt: "City skyline",
       title: "Urban Adventure",
       path: "https://www.fininfocom.com/",
@@ -189,7 +189,7 @@ const Carousel = () => {
                       className="w-full h-full object-cover opacity-75"
                     />
                     <div className="absolute top-0 left-0 right-0 p-4 bg-gradient-to-b from-black/70 to-transparent">
-                      <h2 className="text-white text-lg font-bold">{item.title}</h2>
+                      <h2 className="text-black text-lg font-bold">{item.title}</h2>
                     </div>
                     <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </Link>

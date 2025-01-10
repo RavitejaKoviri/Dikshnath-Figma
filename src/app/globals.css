@@ -279,15 +279,15 @@ body {
 
 /* Hide <br /> for mobile and tablet screens */
 .break-large-screen,.grow your business {
-  display: block;
+  display: inline;
 }
 
 /* Show <br /> for laptops and larger screens */
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
   .break-large-screen {
     display: inline; 
   }
-} */
+}
 
 
 
