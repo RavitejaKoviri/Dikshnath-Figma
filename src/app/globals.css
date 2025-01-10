@@ -1,0 +1,631 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '@fontsource/raleway';
+@import '@fontsource/raleway/400.css'; /* Regular weight */
+@import '@fontsource/raleway/700.css'; /* Bold weight */
+
+
+body {
+  font-family: 'Raleway', sans-serif; /* Use Raleway as the default font */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #fff; /* White background */
+  color: #333; /* Dark text color */
+  line-height: 1.5; /* Line height for readability */
+  overflow-x: hidden;
+  box-sizing: border-box;
+  
+}
+
+
+
+
+/* Base styles for the container */
+.responsive-container {
+
+  width: 100%; /* Relative width */
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding for spacing */
+  background-color: transparent; /* Transparent background */
+  text-align: center; /* Center-align text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Gap between elements */
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Responsive Text */
+.responsive-text {
+  font-family: 'Raleway',Arial, sans-serif;
+  line-height: 1.5; /* Line height for readability */
+  color: #333; /* Dark text color */
+  margin: 0; /* Remove default margin */
+}
+
+/* Gradient Text for .newTechnology */
+.newTechnology {
+  display: inline-block;
+  width: 100%; /* Full width */
+  background: linear-gradient(to right, #5895F0, #F1B662); /* Gradient background */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent */
+  background-clip: text; /* Standard property for modern browsers */
+  color: transparent; /* Fallback for older browsers */
+  font-family: 'Raleway', sans-serif; /* Font family */
+  font-size: 75px; /* Font size */
+  font-weight: 700; /* Bold text */
+  line-height: 94px; /* Line height */
+  letter-spacing: -1px; /* Letter spacing */
+  text-align: center; /* Center-align text */
+  text-underline-position: from-font; /* Underline position */
+  text-decoration-skip-ink: none; /* Decoration skip ink */
+  position: absolute; /* Absolute positioning */
+  left: 50%; /* Center horizontally */
+  top: 150px; /* Adjust top position to align below newLooking */
+  transform: translateX(-50%); /* Adjust for centering */
+  word-break: break-word; /* Ensure text breaks within words */
+}
+
+
+
+
+
+/* Responsive Text for .newExplore */
+.newExplore {
+  width: 690px;
+  height: 97px;
+  top: 322px;
+  left: 50%;
+  gap: 0px;
+  opacity: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #1A1A1ADD;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.newExplore span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #1A1A1ADD;
+}
+
+/* Responsive Text for .newLooking */
+.newLooking {
+  display: inline-block;
+  width: 874px;
+  height: 94px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 75px;
+  font-weight: 700; /* Extra bold text */
+  line-height: 94px; /* Line height for readability */
+  letter-spacing: -1px; /* Adjust letter spacing */
+  text-align: center; /* Center-align text */
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #1A1A1A; /* Dark text color */
+  margin-top: 40px; /* Adjust margin for spacing */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+/* Responsive Button */
+.new-learn-more {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 10px 20px; /* Add padding for the capsule shape */
+  font-family: 'Raleway', sans-serif; /* Use the same font as the text */
+  font-size: clamp(1rem, 3vw, 1.25rem); /* Responsive font size */
+  font-weight: 500; /* Medium font weight */
+  color: #fff; /* White text color */
+  background: linear-gradient(to right, #5895F0, #F1B662); /* Gradient background */
+  border-radius: 60px 60px 60px 60px; /* Rounded corners */
+  text-align: center; /* Center-align text */
+  text-decoration: none; /* Remove underline from the link */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  width: 318px; /* Fixed width */
+  height: 60px; /* Fixed height */
+  margin-top: 20px; /* Adjust margin for spacing */
+  position: absolute; /* Absolute positioning */
+  top: 433px; /* Position from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  /* opacity: 0; Initial opacity */
+}
+
+/* .new-learn-more:hover {
+  transform: sca48e(1.05);
+} */
+
+.new-learn-more:active {
+  transform: scale(0.95); /* Slightly scale down when clicked */
+}
+
+
+
+/* Base styles for the second container */
+.responsive-container2 {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on small screens */
+  gap: 0px; /* Space between paragraphs and component */
+  padding: 20px; /* Add padding for better spacing */
+  width: 100%; /* Fixed width */
+
+  height: 1253px;
+  max-width: 1200px; /* Limit maximum width for larger screens */
+  margin: 0 auto; /* Center the container */
+  position: relative;
+  top: 617px; /* Position from the top */
+  left: 19px; /* Position from the left */
+  /* opacity: 0; Initial opacity */
+   /* Text color */
+}
+
+/* Styles for the heading text */
+.heading-text {
+  width: 897px;
+  height: 67px;
+  top: 0px;
+  left: 50%;
+  gap: 0px;
+  opacity: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 68px;
+  letter-spacing: -0.035em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.heading-text span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 68px;
+  letter-spacing: -0.035em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #777777;
+}
+
+
+
+/* Styles for the sub-text */
+.sub-text {
+  width: 935px;
+  height: 78px;
+  top: 15%;
+  left: 50%;
+  gap: 0px;
+  opacity: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #777777;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+
+
+/* Vector Elements */
+.vector-element {
+  width: 15px;
+  height: 22px;
+  position: absolute; /* Absolute positioning */
+  top: 0.5%; /* Position from the top */
+  left: 5%; /* Position from the left */
+  gap: 0px;
+  border-radius: 0 15.42px 15.42px 0; /* Rounded on the right side only */
+  opacity: 1; /* Fully visible */
+  transform: rotate(-134.28deg); /* Rotate the element */
+  background-color: rgb(13, 164, 245); /* Background color */
+}
+
+
+
+.vector-2 {
+  width: 20px;
+  height: 20px;
+  position: absolute; /* Absolute positioning */
+  top: 3.5%; /* Position from the top */
+  left: 90%; /* Position from the left */
+  /* gap: 0px; */
+  opacity: 0px; /* Fully transparent */
+  transform: rotate(20deg); /* Rotate the element */
+  background-color:#E64D3D; /* Background color */
+  border-radius: 20px 0px 0px 0px; /* Rounded corner */
+}
+
+
+
+
+
+
+/* Hide <br /> for mobile and tablet screens */
+/* .break-large-screen {
+  display: none;
+} */
+
+/* Show <br /> for laptops and larger screens */
+/* @media (min-width: 1024px) {
+  .break-large-screen {
+    display: inline; 
+  }
+} */
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .newLooking,.newTechnology{
+   
+    font-size: 30px;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+ 
+}
+
+
+@media (min-width: 480px) and (max-width: 760px) {
+
+  .newLooking,.newTechnology{
+   
+    font-size: 45px;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .newExplore,.newExplore span{
+   
+    font-size: 16px;
+    /* transform: translateX(-50%); */
+
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 30px;
+  }
+ 
+}
+
+
+@media (min-width: 480px) and (max-width: 760px) {
+
+  .newExplore,.newExplore span{
+   
+    font-size: 18px;
+   
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 30px;
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .new-learn-more{
+   
+    font-size: 16px;
+    transform: translateX(-50%);
+    width: 150px; /* Fixed width */
+    height: 30px; /* Fixed height */
+  }
+ 
+}
+
+
+@media (min-width: 480px) and (max-width: 760px) {
+
+  .new-learn-more{
+   
+    font-size: 16px;
+    transform: translateX(-50%);
+    width: 150px; /* Fixed width */
+    height: 30px; /* Fixed height */
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .heading-text,.heading-text span {
+
+
+    width: 80%;
+    height: 80px;
+    font-size: 20px;
+    line-height: 40px;
+   
+    
+  }
+ 
+}
+
+
+@media (min-width: 480px) and (max-width: 760px) {
+
+  .heading-text,.heading-text span {
+   
+    width: 80%;
+    height: 80px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .sub-text {
+
+
+    width: 80%;
+    height: 80px;
+    font-size: 14px;
+    line-height: 30px;
+    top:10%
+    
+   
+    
+  }
+ 
+}
+
+
+@media (min-width: 480px) and (max-width: 760px) {
+
+  .sub-text {
+   
+    width: 80%;
+    height: 80px;
+    font-size: 14px;
+    line-height: 30px;
+    box-sizing: border-box;
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .vector-element {
+
+
+    width: 10px;
+    height: 17px;
+    top:1%;
+    left: 1%;
+    
+   
+    
+  }
+ 
+}
+
+
+@media (min-width: 480px) and (max-width: 760px) {
+
+  .vector-element {
+   
+    width: 10px;
+    height: 17px;
+    top:1%;
+    left: 1%;
+    
+  }
+ 
+}
+
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .vector-2 {
+
+
+   
+    width: 10px;
+    height: 10px;
+   
+    top: 4%; /* Position from the top */
+    left: 90%; /* Position from the left */
+   
+    
+  }
+ 
+}
+
+
+@media (min-width: 480px) and (max-width: 760px) {
+
+  .vector-2 {
+   
+    width: 15px;
+    height: 15px;
+   
+    top: 4%; /* Position from the top */
+    left: 90%; /* Position from the left */
+    
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .responsive-container,.responsive-container2 {
+
+    width: 100%;
+    box-sizing: border-box;
+   
+  
+   
+    
+  }
+ 
+}
+
+
+@media (min-width: 480px) and (max-width: 760px) {
+
+  .responsive-container,.responsive-container2 {
+    width: 100%;
+    box-sizing: border-box;
+   
+   
+    
+  }
+ 
+}
+
+
+
+.Carousel{
+  top:30%;
+  box-sizing: border-box;
+}
+
+
+
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .Carousel {
+
+
+    top: 30% !important;
+   
+    
+  }
+ 
+}
+
+
+@media (min-width: 480px) and (max-width: 760px) {
+
+  .Carousel {
+   
+   top:30% !important;
+  }
+ 
+}
