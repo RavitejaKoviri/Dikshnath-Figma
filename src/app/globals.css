@@ -97,7 +97,7 @@ body {
   transform: translateX(-50%);
 }
 
-.newExplore span {
+.newExplore .success-stories {
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -206,7 +206,7 @@ body {
   transform: translateX(-50%);
 }
 
-.heading-text span {
+.heading-text .Grafterr {
   font-family: 'Raleway', sans-serif;
   font-size: 54px;
   font-weight: 600;
@@ -278,9 +278,9 @@ body {
 
 
 /* Hide <br /> for mobile and tablet screens */
-/* .break-large-screen {
-  display: none;
-} */
+.break-large-screen,.grow your business {
+  display: block;
+}
 
 /* Show <br /> for laptops and larger screens */
 /* @media (min-width: 1024px) {
@@ -332,7 +332,7 @@ body {
 
 
 @media (min-width: 300px) and (max-width: 480px) {
-  .newExplore,.newExplore span{
+  .newExplore,.success-stories{
    
     font-size: 16px;
     /* transform: translateX(-50%); */
@@ -348,7 +348,7 @@ body {
 
 @media (min-width: 480px) and (max-width: 760px) {
 
-  .newExplore,.newExplore span{
+  .newExplore,.success-stories{
    
     font-size: 18px;
    
@@ -408,7 +408,7 @@ body {
 
 
 @media (min-width: 300px) and (max-width: 480px) {
-  .heading-text,.heading-text span {
+  .heading-text,.heading-text .Grafterr {
 
 
     width: 80%;
@@ -424,7 +424,7 @@ body {
 
 @media (min-width: 480px) and (max-width: 760px) {
 
-  .heading-text,.heading-text span {
+  .heading-text,.heading-text .Grafterr {
    
     width: 80%;
     height: 80px;

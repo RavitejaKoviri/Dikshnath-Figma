@@ -77,8 +77,8 @@ const Page = () => {
         <p className="responsive-text newLooking">Looking for a new</p>
         <p className="responsive-text newTechnology">technology provider?</p>
         <p className="responsive-text newExplore">
-          Explore our <span>success stories</span> to see how businesses like yours
-          <br className="break-large-screen" /> have transformed with Grafterr's technology.
+          Explore our <span className='success-stories'>success stories</span> to see how businesses like yours
+          <span className="break-large-screen" > have transformed with Grafterr's technology.</span>
         </p>
         <Link href="https://www.grafterr.com/"    className="new-learn-more">
            Learn more
@@ -90,7 +90,7 @@ const Page = () => {
         <div className="vector-element bg-blue-400"></div>
         <div className="vector-2"></div>
         <p className="heading-text">
-          More ways <span>Grafterr</span> can help you <br /> grow your business
+          More ways <span className='Grafterr'>Grafterr</span> can help you <span className='grow your business'> grow your business</span>
         </p>
         <p className="sub-text">
           An award-winning, end-to-end restaurant technology & payments platform, designed to
