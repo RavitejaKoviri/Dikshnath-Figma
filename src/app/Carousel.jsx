@@ -4,7 +4,7 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-import 'tailwindcss/tailwind.css'; 
+
 
 
 const Carousel = () => {
