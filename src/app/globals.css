@@ -36,6 +36,8 @@ body {
   gap: 20px; /* Gap between elements */
   box-sizing: border-box;
   position: relative;
+   word-wrap: break-word; /* Allow words to wrap to the next line */
+  white-space: normal;
 }
 
 /* Responsive Text */
